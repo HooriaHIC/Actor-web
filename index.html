@@ -12,6 +12,8 @@
     <title>Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
     
@@ -326,50 +328,68 @@
         <div class="contact-section">
           
 <section class="contact-sed">
-  <div id="contact-form">
-    <div>
-      <h1>Nice to Meet You!</h1> 
-      <h4>Have a question or just want to get in touch? Let's chat.</h4> 
-    </div>
-      <p id="failure">Oopsie...message not sent.</p>  
-      <p id="success">Your message was sent successfully. Thank you!</p>
+  <div class="container">
+
+    <h1 class="brand"><span>Phoenix Web Design</span></h1>
   
-         <form method="post" action="/">
-        <div>
-            <label for="name">
-              <span class="required">Name: *</span> 
-              <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-            </label> 
-        </div>
-        <div>
-            <label for="email">
-              <span class="required">Email: *</span>
-              <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
-            </label>  
-        </div>
-        <div>		          
-            <label for="subject">
-            <span>Subject: </span>
-              <select id="subject" name="subject" tabindex="4">   
-                 <option value="hello">Product Price Question</option>
-                 <option value="quote">Where are my dragons?!</option>  
-                 <option value="general">- Valar Morghulis - </option>
-              </select>
-            </label>
-        </div>
-        <div>		          
-            <label for="message">
-              <span class="required">Message: *</span> 
-              <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-            </label>  
-        </div>
-        <div>		           
-            <button name="submit" type="submit" id="submit" >SEND</button> 
-        </div>
-         </form>
+    <div class="wrapper">
+  
+      <!-- COMPANY INFORMATION -->
+      <div class="company-info">
+        <h3>Phoenix Web Design</h3>
+  
+        <ul>
+          <li><i class="fa fa-road"></i> 44 Main Street</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@phoenix.com</li>
+        </ul>
+      </div>
+      <!-- End .company-info -->
+  
+      <!-- CONTACT FORM -->
+      <div class="contact">
+        <h3>E-mail Us</h3>
+  
+        <form id="contact-form">
+  
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+  
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+  
+          <p>
+            <label>E-mail Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+  
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+  
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+  
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+  
+        </form>
+        <!-- End #contact-form -->
+      </div>
+      <!-- End .contact -->
   
     </div>
-        </div>
+    <!-- End .wrapper -->
+  </div>
+  <!-- End .container -->
 </section>
 
     <script>
@@ -484,76 +504,78 @@
         </script>
         <script>
             var swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
-    (function ($) {
-  $(function () {
+                spaceBetween: 30,
+                effect: 'fade',
+                loop: true,
+                mousewheel: {
+                  invert: false,
+                },
+                // autoHeight: true,
+                pagination: {
+                  el: '.blog-slider__pagination',
+                  clickable: true,
+                }
+              });
+              (function ($) {
+            $(function () {
 
-  var agSwiper = $('.swiper-container');
+            var agSwiper = $('.swiper-container');
 
-  if (agSwiper.length > 0) {
+            if (agSwiper.length > 0) {
 
-    var sliderView = 1;
-    var ww = $(window).width();
-    if (ww >= 1700) sliderView = 7;
-    if (ww <= 1700) sliderView = 7;
-    if (ww <= 1560) sliderView = 6;
-    if (ww <= 1400) sliderView = 5;
-    if (ww <= 1060) sliderView = 4;
-    if (ww <= 800) sliderView = 3;
-    if (ww <= 560) sliderView = 2;
-    if (ww <= 400) sliderView = 1;
+              var sliderView = 1;
+              var ww = $(window).width();
+              if (ww >= 1700) sliderView = 7;
+              if (ww <= 1700) sliderView = 7;
+              if (ww <= 1560) sliderView = 6;
+              if (ww <= 1400) sliderView = 5;
+              if (ww <= 1060) sliderView = 4;
+              if (ww <= 800) sliderView = 3;
+              if (ww <= 560) sliderView = 2;
+              if (ww <= 400) sliderView = 1;
 
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: sliderView,
-      spaceBetween: 0,
-      loop: true,
-      loopedSlides: 16,
-      speed: 700,
-      autoplay: true,
-      autoplayDisableOnInteraction: true,
-      centeredSlides: true
-    });
+              var swiper = new Swiper('.swiper-container', {
+                slidesPerView: sliderView,
+                spaceBetween: 0,
+                loop: true,
+                loopedSlides: 16,
+                speed: 700,
+                autoplay: true,
+                autoplayDisableOnInteraction: true,
+                centeredSlides: true
+              });
 
-    $(window).resize(function () {
-      var ww = $(window).width();
-      if (ww >= 1700) swiper.params.slidesPerView = 7;
-      if (ww <= 1700) swiper.params.slidesPerView = 7;
-      if (ww <= 1560) swiper.params.slidesPerView = 6;
-      if (ww <= 1400) swiper.params.slidesPerView = 5;
-      if (ww <= 1060) swiper.params.slidesPerView = 4;
-      if (ww <= 800) swiper.params.slidesPerView = 3;
-      if (ww <= 560) swiper.params.slidesPerView = 2;
-      if (ww <= 400) swiper.params.slidesPerView = 1;
-    });
+              $(window).resize(function () {
+                var ww = $(window).width();
+                if (ww >= 1700) swiper.params.slidesPerView = 7;
+                if (ww <= 1700) swiper.params.slidesPerView = 7;
+                if (ww <= 1560) swiper.params.slidesPerView = 6;
+                if (ww <= 1400) swiper.params.slidesPerView = 5;
+                if (ww <= 1060) swiper.params.slidesPerView = 4;
+                if (ww <= 800) swiper.params.slidesPerView = 3;
+                if (ww <= 560) swiper.params.slidesPerView = 2;
+                if (ww <= 400) swiper.params.slidesPerView = 1;
+              });
 
-    $(window).trigger('resize');
+              $(window).trigger('resize');
 
-    var mySwiper = document.querySelector('.swiper-container').swiper;
+              var mySwiper = document.querySelector('.swiper-container').swiper;
 
-    agSwiper.mouseenter(function () {
-      mySwiper.autoplay.stop();
-      console.log('slider stopped');
-    });
+              agSwiper.mouseenter(function () {
+                mySwiper.autoplay.stop();
+                console.log('slider stopped');
+              });
 
-    agSwiper.mouseleave(function () {
-      mySwiper.autoplay.start();
-      console.log('slider started again');
-    });
-  }
+              agSwiper.mouseleave(function () {
+                mySwiper.autoplay.start();
+                console.log('slider started again');
+              });
+            }
 
-  });
-})(jQuery);
+            });
+          })(jQuery);
+         
         </script>
+       
 </body>
 </html>
