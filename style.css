@@ -263,7 +263,7 @@ body{
 
 
   .tour{
-      height: 65vh;
+      height: 100vh;
       width: 95vw;
       padding-top: 40px;
   }
@@ -983,7 +983,8 @@ body{
   text-rendering:optimizeLegibility;
 }
 .contact-sec{
-  height: 85vh;
+  height: 95vh;
+  margin-top: 300px;
 }
 
 .container {
