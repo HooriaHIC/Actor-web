@@ -77,6 +77,12 @@ html{
       float: right;
       margin: .5em 0;
       margin-top: 1em;
+    
+  }
+  .menuimg{
+    height: 65px;
+    margin-top: 10px;
+    
   }
   .macok{
     font-size: 1.5em; text-decoration: overline underline;padding-left: 20px;
@@ -114,7 +120,7 @@ html{
   
   .active{
       font-size: 2.75em;
-      margin-top: 15px;
+      margin-top: 25px !important;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
