@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 </head>
 <body>
     
@@ -23,17 +24,17 @@
                     <a href="#songs/acts"><li>Songs/Acts</li></a>
                     <a href="#tour"><li>Tour</li></a>
                     <a href="#home" class="active" ><li>Kira Kosarin</li></a>
-                    <a href="#"><li>Gallery</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <i class="fa fa-facebook macok" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i>
-                    <i class="fa fa-twitter macok" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i>
-                    <i class="fa fa-instagram macok" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i>
+                    <a href="#gallery"><li>Gallery</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <a  href="https://www.facebook.com/Kira-Kosarin-169606906419850/"><i class="fa fa-facebook macok" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i></a>
+                    <a  href="https://twitter.com/kirakosarin" ><i class="fa fa-twitter macok"style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i></a>
+                    <a href="https://www.instagram.com/kirakosarin/"><i class="fa fa-instagram macok" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i></a>
                 </ul>
                 <div class="handle">
                     <p class="menu" style="font-size: 2em; padding-left: 10px;">KK</p>
-                    <i class="fa fa-facebook" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 100px; "></i>
-                    <i class="fa fa-twitter" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i>
-                    <i class="fa fa-instagram" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i>
+                    <a href="https://www.facebook.com/Kira-Kosarin-169606906419850/"><i class="fa fa-facebook" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 100px; "></i></a>
+                    <a href="https://twitter.com/kirakosarin"><i class="fa fa-twitter" style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i></a>
+                    <a href="https://www.instagram.com/kirakosarin/"><i class="fa fa-instagram"  style=" font-size: 1.5em; text-decoration: overline underline;padding-left: 20px; "></i></a>
 
                     <div class="menu_icon">
                       <img src="assets/favorite-star-icon.png">
@@ -326,72 +327,137 @@
               </ul>
             </div>
           </section>
-        <div class="contact-section">
-          
-<section class="contact-sed">
-  <div class="container">
-
-    <h1 class="brand"><span>Lets get in touch</span></h1>
-  
-    <div class="wrapper">
-  
-      <!-- COMPANY INFORMATION -->
-      <div class="company-info">
-        <h3>kira kosarin</h3>
-  
-        <ul>
-          <li><i class="fa fa-road"></i> United states</li>
-          <li><i class="fa fa-phone"></i> 11-1111-(333)</li>
-          <li><i class="fa fa-envelope"></i> kira@Nickelodeon.com</li>
-        </ul>
+          <section class="gallery-sec" id="gallery">
+            <h1 class="acts-h1">Gallery</h1>
+              <div class="toolbar mb2 mt2">
+                  <button class="btn fil-cat" href="" data-rel="all">All</button>
+                  <button class="btn fil-cat" data-rel="web">Songs</button>
+                  <button class="btn fil-cat" data-rel="flyers">Cute</button>
+                  <button class="btn fil-cat" data-rel="bcards">In role</button>
+                </div> 
+                 
+                <div id="portfolio">
+                  <div class="tile scale-anm web all">
+                        <img src="./assets/kira-kosarin-for-vinyl-album-promo-2018-2019-0.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm bcards all">
+                    <img src="./assets/Super_Pheobe.png" alt="" />
+                  </div>
+                  <div class="tile scale-anm bcards all">
+                      <img src="./assets/vX7Ih7j.jpg" alt="" />
+                    </div>
+                  <div class="tile scale-anm web all">
+                    <img src="./assets/kira-kosarin-timeflies-raincoat-video.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm web all">
+                            <img src="./assets/kira-vinyl.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                        <img src="./assets/kira-bts.png" alt="" />
+                  </div>
+                  <div class="tile scale-anm bcards all">
+                            <img src="./assets/inrole.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                    <img src="./assets/unnamed.png" alt="" />
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                    <img src="./assets/f39bd10088d4183a9382a4e07054685f.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm web all">
+                        <img src="./assets/kira_kosarin_by_sean_schiedt_photoshoot_january_2018_6.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                           <img src="./assets/EkmMpqc.jpg" alt="" /> 
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                      <img src="./assets/34947c1e470e8c1394452c72931718fe--kira-kosarin-nickelodeon.jpg" alt="" /> 
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                      <img src="./assets/kiramain.jpg" alt="" /> 
+                  </div>
+                  <div class="tile scale-anm flyers all">
+                      <img src="./assets/BhCZZ9pCIAArsLA.jpg" alt="" /> 
+                  </div>
+                  <div class="tile scale-anm web all">
+                        <img src="./assets/B0UmSlxCIAA1lBd.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm bcards all">
+                            <img src="./assets/Kirakosarinstraighthair.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm bcards all">
+                      <img src="./assets/92a97dfacb499d2b47488448a30641b8.jpg" alt="" />
+                  </div>
+                  <div class="tile scale-anm web all">
+                       <img src="./assets/Screen-Shot-2018-05-14-at-3.26.49-PM.png" alt="" /> 
+                  </div>
+                  <div class="tile scale-anm bcards all">
+                          <img src="" alt="" />  
+                  </div>
+                  <div class="tile scale-anm web all">
+                            <img src="./assets/" alt="" />
+                  </div> 
+                  <div class="tile scale-anm web all">
+                      <img src="./assets/Dxu6FzwU0AUM2H7.jpg" alt="" />
+                  </div> 
+                  <div class="tile scale-anm web all">
+                      <img src="./assets/kira-kosarin-puple-hair.jpg" alt="" />  
+                  </div> 
+                  <div class="tile scale-anm bcards all">     
+                            <img src="./assets/f39bd10088d4183a9382a4e07054685f.jpg" alt="" />
+                  </div>
+                </div>
+                
+                <div style="clear:both;"></div>   
+          </section>
+  <section class="contact-sed" id="contact">
+   <h1 class="acts-h1">Contact Me</h1>
+    <div class="page">
+      <div class="container">
+        <div class="left">
+          <div class="login">Lets get in touch</div>
+        </div>
+        <div class="right">
+          <svg viewBox="0 0 320 300">
+            <defs>
+              <linearGradient
+                              inkscape:collect="always"
+                              id="linearGradient"
+                              x1="13"
+                              y1="193.49992"
+                              x2="307"
+                              y2="193.49992"
+                              gradientUnits="userSpaceOnUse">
+                <stop
+                      style="stop-color:#ff00ff;"
+                      offset="0"
+                      id="stop876" />
+                <stop
+                      style="stop-color:#ff0000;"
+                      offset="1"
+                      id="stop878" />
+              </linearGradient>
+            </defs>
+            <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+          </svg>
+          <form class="form"  action="https://formspree.io/hooria.hic@gmail.com" method="POST">
+            <label for="email">Email</label>
+            <input type="email" required id="email">
+            <label for="name">Name</label>
+            <input type="name" required id="password">
+            <textarea required placeholder="Write on whats in your mind"></textarea>
+            <input type="submit" id="submit" value="Submit">
+          </form>
+        </div>
       </div>
-      <!-- End .company-info -->
-  
-      <!-- CONTACT FORM -->
-      <div class="contact">
-        <h3>E-mail Us</h3>
-  
-        <form id="contact-form" action="https://formspree.com/hooria.hic@gmail.com">
-  
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" id="name" required>
-          </p>
-  
-          <p>
-            <label>Company</label>
-            <input type="text" name="company" id="company">
-          </p>
-  
-          <p>
-            <label>E-mail Address</label>
-            <input type="email" name="email" id="email" required>
-          </p>
-  
-          <p>
-            <label>Phone Number</label>
-            <input type="text" name="phone" id="phone">
-          </p>
-  
-          <p class="full">
-            <label>Message</label>
-            <textarea name="message" rows="5" id="message"></textarea>
-          </p>
-  
-          <p class="full">
-            <button type="submit">Submit</button>
-          </p>
-  
-        </form>
-        <!-- End #contact-form -->
-      </div>
-      <!-- End .contact -->
-  
     </div>
-    <!-- End .wrapper -->
-  </div>
-  <!-- End .container -->
-</section>
+    
+  </section>
+          
+<footer class="footer">
+    <p>Copyright &copy; 2019 all rights deserved &hearts;</p>      
+
+</footer>
 
     <script>
             $('.handle').on('click', function(){
@@ -413,95 +479,7 @@
                 $(".close2, .popup-overlay2").on("click", function(){
                 $(".popup-overlay2, .popup-content2").removeClass("active");
                 });
-                $('.slider').each(function() {
-                  var $this = $(this);
-                  var $group = $this.find('.slide_group');
-                  var $slides = $this.find('.slide');
-                  var bulletArray = [];
-                  var currentIndex = 0;
-                  var timeout;
-                  
-                  function move(newIndex) {
-                    var animateLeft, slideLeft;
-                    
-                    advance();
-                    
-                    if ($group.is(':animated') || currentIndex === newIndex) {
-                      return;
-                    }
-                    
-                    bulletArray[currentIndex].removeClass('active');
-                    bulletArray[newIndex].addClass('active');
-                    
-                    if (newIndex > currentIndex) {
-                      slideLeft = '100%';
-                      animateLeft = '-100%';
-                    } else {
-                      slideLeft = '-100%';
-                      animateLeft = '100%';
-                    }
-                    
-                    $slides.eq(newIndex).css({
-                      display: 'block',
-                      left: slideLeft
-                    });
-                    $group.animate({
-                      left: animateLeft
-                    }, function() {
-                      $slides.eq(currentIndex).css({
-                        display: 'none'
-                      });
-                      $slides.eq(newIndex).css({
-                        left: 0
-                      });
-                      $group.css({
-                        left: 0
-                      });
-                      currentIndex = newIndex;
-                    });
-                  }
-                  
-                  function advance() {
-                    clearTimeout(timeout);
-                    timeout = setTimeout(function() {
-                      if (currentIndex < ($slides.length - 1)) {
-                        move(currentIndex + 1);
-                      } else {
-                        move(0);
-                      }
-                    }, 4000);
-                  }
-                  
-                  $('.next_btn').on('click', function() {
-                    if (currentIndex < ($slides.length - 1)) {
-                      move(currentIndex + 1);
-                    } else {
-                      move(0);
-                    }
-                  });
-                  
-                  $('.previous_btn').on('click', function() {
-                    if (currentIndex !== 0) {
-                      move(currentIndex - 1);
-                    } else {
-                      move(3);
-                    }
-                  });
-                  
-                  $.each($slides, function(index) {
-                    var $button = $('<a class="slide_btn">&bull;</a>');
-                    
-                    if (index === currentIndex) {
-                      $button.addClass('active');
-                    }
-                    $button.on('click', function() {
-                      move(index);
-                    }).appendTo('.slide_buttons');
-                    bulletArray.push($button);
-                  });
-                  
-                  advance();
-                });
+
         </script>
         <script>
             var swiper = new Swiper('.blog-slider', {
@@ -576,6 +554,56 @@
             });
           })(jQuery);
          
+
+        </script>
+        <script>
+          var current = null;
+            document.querySelector('#email').addEventListener('focus', function(e) {
+              if (current) current.pause();
+              current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                  value: 0,
+                  duration: 700,
+                  easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                  value: '240 1386',
+                  duration: 700,
+                  easing: 'easeOutQuart'
+                }
+              });
+            });
+            document.querySelector('#password').addEventListener('focus', function(e) {
+              if (current) current.pause();
+              current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                  value: -336,
+                  duration: 700,
+                  easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                  value: '240 1386',
+                  duration: 700,
+                  easing: 'easeOutQuart'
+                }
+              });
+            });
+            $(function() {
+              var selectedClass = "";
+              $(".fil-cat").click(function(){ 
+              selectedClass = $(this).attr("data-rel"); 
+              $("#portfolio").fadeTo(100, 0.1);
+              $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+              setTimeout(function() {
+                $("."+selectedClass).fadeIn().addClass('scale-anm');
+                $("#portfolio").fadeTo(300, 1);
+              }, 300); 
+              
+            });
+          });
+           
         </script>
        
 </body>
